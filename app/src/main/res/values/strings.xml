@@ -1,0 +1,8 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">MadLibs</string>
+    <string-array name="story_list">
+        <item>Choose the story you want start</item>
+        <item>Make a short story</item>
+        <item>Make a WTF tarzan story</item>
+    </string-array>
+</resources>

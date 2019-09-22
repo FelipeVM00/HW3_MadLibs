@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15sp"
+            android:text="Welcome to Mad Libs! I will ask you to fill in words to complete a story. You won't be able to see the whole story untilyou are done filling in all the missing words. Click below to get STARTED!"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/welcome" android:textSize="18sp" app:layout_constraintHorizontal_bias="0.0"/>
+    <ImageView
+            android:layout_width="272dp"
+            android:layout_height="284dp" app:srcCompat="@drawable/logo" tools:layout_editor_absoluteY="64dp"
+            tools:layout_editor_absoluteX="69dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="60sp"
+            android:id="@+id/logo"/>
+    <Button
+            android:text="GET STARTED!!!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcome" android:textSize="30sp"
+            android:onClick="gameStartClick" app:layout_constraintHorizontal_bias="0.497" android:id="@+id/button"/>
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteX="8dp" android:id="@+id/story_menu" android:entries="@array/story_list"
+            app:layout_constraintTop_toBottomOf="@+id/welcome" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/button"/>
+
+</android.support.constraint.ConstraintLayout>
